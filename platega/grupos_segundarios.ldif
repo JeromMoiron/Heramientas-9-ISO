@@ -1,0 +1,76 @@
+#Añade a Jerom a  g-directores
+#Localización del grupo
+dn: cn=g-directores,ou=directores,ou=empleados,dc=lpyme09,dc=net
+#Acción a realizar
+changetype: modify
+#Función de añadir un miembro
+add: memberUid
+#Id del miembro a añadir
+memberUid:moitrijer
+
+#Añade a g-programadores al usuario paco
+#Localización del grupo
+dn: cn=g-programadores,ou=personal,ou=empleados,dc=lpyme09,dc=net
+#Acción a realizar
+changetype: modify
+#Funcion de añadir un miembro
+add: memberUid
+#Id del miembro a añadir
+memberUid:paco
+
+
+#Añade a g-programadores al usuario lorenzo
+#Localización del grupo
+dn: cn=g-programadores,ou=personal,ou=empleados,dc=lpyme09,dc=net
+#Acción a realizar
+changetype: modify
+#Funcion de añadir un miembro
+add: memberUid
+#Id del miembro a añadir
+memberUid:lorenzo
+
+
+#Añade a g-RecursosHumanos al usuario pablo
+#Localización del grupo
+dn: cn=g-RecursosHumanos,ou=RecursosHumanos,ou=empleados,dc=lpyme09,dc=net
+#Acción a realizar
+changetype: modify
+#Funcion de añadir miembro
+add: memberUid
+#Id del miembro a añadir
+memberUid:Pablo
+
+
+#Añade a g-administradores al usuario juan
+#Localización del grupo
+dn: cn=g-administradores,ou=personal,ou=empleados,dc=lpyme09,dc=net
+#Acción a realizar
+changetype: modify
+#Funcion de añadir miembro
+add: memberUid
+#Id del miembro a añadir
+memberUid:juan
+
+
+#Añade a g-RecursosHumanos al usuario jairo
+#Localización del grupo
+dn: cn=g-RecursosHumanos,ou=RecursosHumanos,ou=empleados,dc=lpyme09,dc=net
+#Acción a realizar
+changetype: modify
+#Funcion de añadir miembro
+add: memberUid
+#Id del miembro a añadir
+memberUid:jairo
+
+
+#Añade a g-directores al usuario xocas
+#Localización del grupo
+dn: cn=g-directores,ou=directores,ou=empleados,dc=lpyme09,dc=net
+#Acción a realizar
+changetype: modify
+#Funcion de añadir miembro
+add: memberUid
+#Id del miembro a añadir
+memberUid:xocas
+
+

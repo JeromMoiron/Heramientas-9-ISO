@@ -1,0 +1,198 @@
+#1. Creo el usuario Jerom
+dn: uid=moitrijer,ou=directores,ou=empleados,dc=lpyme09,dc=net
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: moitrijer
+sn: Moiron Trigo
+cn: Jerom Moiron Trigo
+givenName: Jerom
+displayName: Jerom Moiron Trigo
+uidNumber: 10000
+gidNumber: 10000
+userpassword: abc123.
+gecos: Jerom Moiron Trigo
+loginShell: /bin/bash
+homeDirectory: /home/lpyme09/empleados/directores/moitrijer
+mail: moitrijer@lpyme09.net
+initials: JMT
+shadowExpire: -1
+
+#2. Creo el usuario paco
+dn: uid=paco,ou=personal,ou=empleados,dc=lpyme09,dc=net
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: paco
+sn: Perez Iglesias
+cn: Paco Perez Iglesias
+givenName: paco
+displayName: Paco Perez Iglesias
+uidNumber: 10001
+gidNumber: 10003
+userpassword: abc123.
+gecos: Paco Perez Iglesias
+loginShell: /bin/bash
+homeDirectory: /home/lpyme09/personal/empleados/paco
+mail: paco@lpyme09.net
+initials: PPI
+shadowExpire: -1
+
+#3.Creo el usuario Lorenzo
+dn: uid=lorenzo,ou=personal,ou=empleados,dc=lpyme09,dc=net
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: lorenzo
+sn: Lamborghini Fernandez
+cn:lorenzo 
+givenName: lorenzo Lamborghini Fernandez
+displayName:lorenzo 
+uidNumber: 10002
+gidNumber: 10003
+userpassword: abc123.
+gecos:lorenzo  Lamborghini Fernandez
+loginShell: /bin/bash
+homeDirectory: /home/lpyme09/personal/empleados/lorenzo
+mail: lorenzo@lpyme09.net
+initials: LLF
+shadowExpire: -1
+
+#4.Creo el usuario pablo
+dn: uid=Pablo,ou=personal,ou=empleados,dc=lpyme09,dc=net
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: Pablo
+sn: Perez Picoaga
+cn:Pablo Perez Picoaga
+givenName: Pablo
+displayName:Pablo Perez Picoaga
+uidNumber: 10003
+gidNumber: 10001
+userpassword: abc123.
+gecos:Pablo Perez Picoaga
+loginShell: /bin/bash
+homeDirectory: /home/lpyme09/empleados/RecursosHumanos/Pablo
+mail: Pablo@lpyme09.net
+initials: PPP
+shadowExpire: -1
+
+#5.Creo el usuario juan
+dn: uid=juan,ou=personal,ou=empleados,dc=lpyme09,dc=net
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: juan
+sn: Rodriguez Perez
+cn:juan Rodriguez Perez
+givenName: Rodriguez Perez
+displayName:juan Rodriguez Perez
+uidNumber: 10004
+gidNumber: 10002
+userpassword: abc123.
+gecos:juan Rodriguez Perez
+loginShell: /bin/bash
+homeDirectory: /home/lpyme09/personal/administradores/juan
+mail: juan@lpyme09.net
+initials: JRP
+shadowExpire: -1
+
+#6.Creo el usuario jairo
+dn: uid=jairo,ou=RecursosHumanos,ou=empleados,dc=lpyme09,dc=net
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: jairo
+sn: Mendez Perez
+cn:jairo Mendez Perez
+givenName: Mendez Perez
+displayName:jairo Mendez Perez
+uidNumber: 10005
+gidNumber: 10001
+userpassword: abc123.
+gecos:jairo Mendez Perez
+loginShell: /bin/bash
+homeDirectory: /home/lpyme09/empleados/RecursosHumanos/jairo
+mail: jairo@lpyme09.net
+initials: JMP
+shadowExpire: -1
+
+#7.Creo el usuario Xocas
+dn: uid=xocas,ou=directores,ou=empleados,dc=lpyme09,dc=net
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: xocas
+sn: Monster Legends
+cn:Xocas Monster Legends
+givenName: Monster Legends
+displayName:xocas Monster Legends
+uidNumber: 10005
+gidNumber: 10000
+userpassword: abc123.
+gecos:xocas Monster Legends
+loginShell: /bin/bash
+homeDirectory: /home/lpyme09/empleados/directores/xocas
+mail: xocas@lpyme09.net
+initials: XML
+shadowExpire: -1
+#8 Creo o usuario pedido no examen 
+dn: uid=SU98,ou=directores,ou=empleados,dc=lpyme09,dc=net
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: SU98
+sn: 
+cn:SU98
+givenName:
+displayName:SU98
+uidNumber: 10006
+gidNumber: 10000
+userpassword: abc123.
+gecos:SU98
+loginShell: /bin/bash
+homeDirectory: /home/lpyme09/empleados/directores/SU98
+mail: SU98@lpyme09.net
+initials: XML
+shadowExpire: -1
+
+#9 Creo o usuario pedido no examen 
+dn: uid=xiana98,ou=directores,ou=empleados,dc=lpyme09,dc=net
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: xiana98
+sn: 
+cn:xiana98
+givenName:
+displayName:xiana98
+uidNumber: 10007
+gidNumber: 10000
+userpassword: abc123.
+gecos:xiana98
+loginShell: /bin/bash
+homeDirectory: /home/lpyme09/empleados/directores/xiana98
+mail: xiana98@lpyme09.net
+initials: XML
+shadowExpire: -1
+
+#8 Creo o usuario pedido no examen 
+dn: uid=zoria98,ou=indicecomerce,dc=lpyme09,dc=net
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: zoria98
+sn: 
+cn:zoria98
+givenName:
+displayName:zoria98
+uidNumber: 10008
+gidNumber: 10000
+userpassword: abc123.
+gecos:zoria98
+loginShell: /bin/bash
+homeDirectory: /home/lpyme09/empleados/directores/zoria98
+mail: zoria98@lpyme09.net
+initials: XML
+shadowExpire: -1

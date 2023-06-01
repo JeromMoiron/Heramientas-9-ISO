@@ -1,0 +1,44 @@
+#Crea el grupo g-directores
+#Localización del grupo
+dn: cn=g-directores,ou=directores,ou=empleados,dc=lpyme09,dc=net
+#Tipo de grupo
+objectClass: posixGroup
+#Nombre del grupo
+cn: g-directores
+#Numero de identificación
+gidNumber: 10000
+
+#Crea el grupo g-RecursosHumanos
+#Localización del grupo
+dn: cn=g-RecursosHumanos,ou=RecursosHumanos,ou=empleados,dc=lpyme09,dc=net
+#Tipo de grupo
+objectClass: posixGroup
+#Nombre del grupo
+cn: g-RecursosHumanos
+#Numero de identificación
+gidNumber: 10001
+
+#Crea el grupo g-administradores
+#Localización del grupo
+dn: cn=g-administradores,ou=personal,ou=empleados,dc=lpyme09,dc=net
+#Tipo de grupo
+objectClass: posixGroup
+#Nombre del grupo
+cn: g-alum
+#Numero de identificación
+gidNumber: 10002
+
+#Crea el grupo g-programadores
+#Localización del grupo
+dn: cn=g-programadores,ou=personal,ou=empleados,dc=lpyme09,dc=net
+#Tipo de grupo
+objectClass: posixGroup
+#Nombre del grupo
+cn: g-alum
+#Numero de identificación
+gidNumber: 10003
+
+#Nombre del grupo
+cn: g-usuarios
+#Numero de identificación
+gidNumber: 10004

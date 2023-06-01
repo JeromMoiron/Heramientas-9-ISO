@@ -1,0 +1,41 @@
+#Crea la OU=empleados
+dn: ou=empleados,dc=lpyme09,dc=net
+objectClass: organizationalUnit
+ou: empleados
+description: OU para almacenar empleados
+
+#Crea la OU=directores
+dn: ou=directores,ou=empleados,dc=lpyme09,dc=net
+objectClass: organizationalUnit
+ou: profe
+description: OU para almacenar directores
+
+#Crea la OU=personal
+dn: ou=personal,ou=empleados,dc=lpyme09,dc=net
+objectClass: organizationalUnit
+ou: personal
+description: OU para almacenar personal
+
+#Crea la OU=RecursosHumanos dentro de la OU=empleados
+dn:ou=RecursosHumanos,ou=empleados,dc=lpyme09,dc=net
+objectClass: organizationalUnit
+ou: RecursosHumanos
+description: OU para almacenar RecursosHumanos
+
+#Crea la OU=perfiles
+dn: ou=perfiles,dc=lpyme09,dc=net
+objectClass: organizationalUnit
+ou: perfiles
+description: OU para almacenar users de perfiles
+
+#Crea la OU=Comun
+dn: ou=Comun,dc=lpyme09,dc=net
+objectClass: organizationalUnit
+ou: Comun
+description: OU para almacenar Comun
+
+#Crea la OU=ComunEmpleados
+dn: ou=ComunEmpleados,dc=lpyme09,dc=net
+objectClass: organizationalUnit
+ou: ComunEmpleados
+description: OU para ComunEmpleados
