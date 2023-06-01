@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Información del sistema</title>
+    <HTA:APPLICATION
+        APPLICATIONNAME="Información del sistema"
+        SCROLL="yes"
+        SINGLEINSTANCE="yes"
+        WINDOWSTATE="normal"
+        ICON="shell32.dll"
+    >
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        pre {
+            white-space: pre-wrap;
+        }
+    </style>
+    <script language="VBScript">
+        Sub RunCommands()
+            ' Ejecuta los comandos y muestra la salida en el cuadro de texto
+            outputTextArea.value = ""
+            RunCommand("systeminfo")
+            RunCommand("ipconfig /all")
+            RunCommand("wmic computersystem get /format:list")
+            RunCommand("wmic diskdrive get /format:list")
+        End Sub
+
+        Sub RunCommand(command)
+            ' Ejecuta un comando y agrega la salida al cuadro de texto
+            Set objShell = CreateObject("WScript.Shell")
+            Set objExec = objShell.Exec("%comspec% /c " & command)
+
+            Do While Not objExec.StdOut.AtEndOfStream
+                outputTextArea.value = outputTextArea.value & objExec.StdOut.ReadLine() & vbCrLf
+            Loop
+        End Sub
+    </script>
+</head>
+<body>
+    <h2>Información del sistema</h2>
+    <input type="button" value="Obtener información" onclick="RunCommands()">
+    <pre id="outputTextArea"></pre>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Contrasinal alumnos</title>
+<HTA:APPLICATION 
+     ID="objHTAHelpomatic"
+     APPLICATIONNAME="Mostrar grupos e usuarios"
+     SCROLL="yes"
+     SINGLEINSTANCE="yes"
+     WINDOWSTATE="maximize"
+  
+>
+<!-- link href="contido.css" rel="stylesheet" type="text/css" -->
+</head>
+<body>
+<select size="20" name="grupos"  onChange="mostrarUsuarios()"><option>grupos do dominio</option></select><br />
+<select size="20" name="usuarios"  onChange=""></select>
+
+</body>
+<SCRIPT Language="VBScript">
+'Option Explicit
+
+'Dim Dominio, ControladorDominio
+'Dim DomainObj, GroupObj
+'Dim objOption
+
+Dominio="iespiringalla"
+ControladorDominio="lucus"
+
+Set DomainObj = GetObject("WinNT://"&Dominio)
+DomainObj.Filter = Array("group")
+
+For Each GroupObj in DomainObj 
+    Set objOption = Document.createElement("OPTION")
+	objOption.Text = GroupObj.Name
+	objOption.Value = GroupObj.Name
+	grupos.Add(objOption)
+Next
+
+Sub mostrarUsuarios()
+    'Dim GrupoObj, UserObj, objOption
+	'Dim str
+
+    'limparLista(usuarios)
+    
+	str = "WinNT://"&Dominio&"/"&grupos.Value
+	Set GrupoObj = GetObject(str)
+    For Each UserObj in GrupoObj.Members
+        Set objOption = Document.createElement("OPTION")
+	    objOption.Text = UserObj.Name
+	    objOption.Value = UserObj.Name
+	    usuarios.Add(objOption)
+    Next
+	
+
+End Sub
+
+Sub limparLista(lista)
+    For Each objOption in lista.Members
+       objOption.RemoveNode
+    Next
+  
+End Sub
+
+
+</SCRIPT>
